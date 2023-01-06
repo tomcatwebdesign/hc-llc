@@ -1,22 +1,221 @@
 ---
 layout: default
-title: Neat Starter
+title: HC LLC | Site Work | Rapid City, SD
 path: home
 ---
 
-<div class="container mx-auto lg:h-screen flex flex-col justify-center items-center">
-  <h1>
-    Welcome to
-    <strong class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
-      {{title}}
-    </strong>
-  </h1>
+<!-- Hero -->
+<section id="hero">
+  <img src="/static/img/hero.jpg" alt="Hero Image" id="hero-img">
+  <div class="overlay"></div>
+  <div id="hero-content">
+    <span class="line"></span>
+    <span class="title">Experts In Our Field</span>
+    <h1>We Move Dirt</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis commodi, saepe sit quisquam dignissimos odio.
+      <br>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, voluptatem? <br>
+      Lorem ipsum dolor sit amet.
+    </p>
+    <a href="#estimate" class="btn">Get A Quote</a>
+  </div>
+</section>
 
-  <p>
-    <abbr title="netlify cms, eleventy, alpine js & tailwind css">NEAT</abbr>
-    Starter Template. Get Started by editing.
-    <code class="bg-gray-100 text-blue-800 p-1">/index.njk</code>
-  </p>
+<!-- About -->
+<section id="about">
+  <div class="container">
+    <div class="row">
+      <div id="about-content" class="col-md-6">
+        <span class="line"></span>
+        <span class="title">Tailor Made Experience</span>
+        <h2>We individually assess each
+          job and offer optimal solutions</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus est eum delectus nesciunt deleniti quae
+          veniam nam dolor enim doloribus, sed quisquam esse ad cumque voluptatum placeat ex repudiandae reiciendis!
+        </p>
 
-  {% include "./_includes/partials/content.html" %}
-</div>
+        <a href="#services" class="btn">Our Services</a>
+      </div>
+
+      <div id="about-img" class="col-md-6">
+        <div class="about-box"></div>
+        <img src="/static/img/about.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services">
+  <div class="container">
+    <h2>Our Services</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur cumque iusto, asperiores magni quasi placeat
+      ipsam obcaecati dolorum voluptas laborum ipsa tempora quod inventore, aperiam fuga accusantium totam recusandae
+      pariatur a? Beatae incidunt molestiae fuga laudantium? Ullam sapiente reprehenderit a voluptates, aliquam
+      recusandae repellendus mollitia eaque corrupti ipsum repudiandae tempora.</p>
+
+    <div class="row">
+      <div id="service1" class="service-card-container col-md-6">
+        <div class="service-card">
+          <img class="card-img" src="/static/img/sitework.jpg" alt="Card image cap">
+          <div class="body">
+            <h3 class="card-title text-center">Sitework/Finish Grading</h3>
+            <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of
+              the
+              card's
+              content.</p>
+          </div>
+        </div>
+      </div>
+      <div id="service2" class="service-card-container col-md-6">
+        <div class="service-card">
+          <img class="card-img" src="/static/img/earth.jpg" alt="Card image cap">
+          <div class="body">
+            <h3 class="card-title text-center">Earthwork</h3>
+            <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of
+              the
+              card's
+              content.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="service3" class="service-card-container col-md-4">
+        <div class="service-card">
+          <img class="card-img" src="/static/img/utilities.jpg" alt="Card image cap">
+          <div class="body">
+            <h3 class="card-title text-center">Underground Utilities</h3>
+            <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of
+              the
+              card's
+              content.</p>
+          </div>
+        </div>
+      </div>
+      <div id="service4" class="service-card-container col-md-4">
+        <div class="service-card">
+          <img class="card-img" src="/static/img/demo.jpg" alt="Card image cap">
+          <div class="body">
+            <h3 class="card-title text-center">Demolition</h3>
+            <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of
+              the
+              card's
+              content.</p>
+          </div>
+        </div>
+      </div>
+      <div id="service5" class="service-card-container col-md-4">
+        <div class="service-card">
+          <img class="card-img" src="/static/img/trucking.jpg" alt="Card image cap">
+          <div class="body">
+            <h3 class="card-title text-center">Trucking</h3>
+            <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of
+              the
+              card's
+              content.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Us -->
+<section id="why-us">
+  <div class="container">
+    <h2>Why Work With Us?</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur cumque iusto, asperiores magni quasi placeat
+      ipsam obcaecati dolorum voluptas laborum ipsa tempora quod inventore, aperiam fuga accusantium totam recusandae
+      pariatur a? Beatae incidunt molestiae fuga laudantium? Ullam sapiente reprehenderit a voluptates, aliquam
+      recusandae
+      repellendus mollitia eaque corrupti ipsum repudiandae tempora.</p>
+
+    <div class="row">
+      <div class="col-md-5" id="why-us-img">
+        <img id="why-img" src="/static/img/why.jpg" alt="">
+      </div>
+
+      <div class="col-md-7 container" id="why-us-cards">
+        <div class="row why-row-1">
+          <div id="reason1" class="why-container col-lg-6">
+            <div class="why-card">
+              <div class="icon-container">
+                <i class="fa-solid fa-house-chimney"></i>
+              </div>
+              <h3>Reason 1</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, explicabo?</p>
+            </div>
+          </div>
+          <div id="reason2" class="why-container col-lg-6">
+            <div class="why-card">
+              <div class="icon-container">
+                <i class="fa-solid fa-house-chimney"></i>
+              </div>
+              <h3>Reason 1</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, explicabo?</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div id="reason3" class="why-container col-lg-6">
+            <div class="why-card">
+              <div class="icon-container">
+                <i class="fa-solid fa-house-chimney"></i>
+              </div>
+              <h3>Reason 1</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, explicabo?</p>
+            </div>
+          </div>
+          <div id="reason4" class="why-container col-lg-6">
+            <div class="why-card">
+              <div class="icon-container">
+                <i class="fa-solid fa-house-chimney"></i>
+              </div>
+              <h3>Reason 1</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, explicabo?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="estimate">
+  <div id="form-container" class="container">
+    <span class="line"></span>
+    <span class="title">Get In Touch</span>
+    <h2 id="contact-heading">For A Free Estimate</h2>
+    <h2 id="thank-you-heading">Thank You</h2>
+    <p id="thank-you-p">
+      Thank you and we will be in touch very soon!
+    </p>
+    <form id="estimate-form">
+      <div class="form-group">
+        <label for="nameInput">Name</label>
+        <input type="text" class="form-control" name="nameInput" id="nameInput" aria-describedby="emailHelp"
+          placeholder="Enter Name">
+      </div>
+      <div class="form-group">
+        <label for="phoneInput">Phone</label>
+        <input type="phone" class="form-control" name="phoneInput" id="phoneInput" placeholder="Phone Number">
+      </div>
+      <div class="form-group">
+        <label for="emailInput">Email</label>
+        <input type="email" class="form-control" name="emailInput" id="emailInput" aria-describedby="emailHelp"
+          placeholder="Enter Email">
+      </div>
+      <div class="form-group">
+        <label for="messageInput">How Can We Help?</label>
+        <textarea class="form-control" name="messageInput" id="messageInput" rows="6"
+          placeholder="Tell Us About Your Project..."></textarea>
+      </div>
+      <button id="form-submit" type="submit" class="btn">Submit</button>
+    </form>
+  </div>
+</section>

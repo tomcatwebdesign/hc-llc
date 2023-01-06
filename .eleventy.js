@@ -24,16 +24,22 @@ module.exports = function (eleventyConfig) {
   // You may remove this if you can use JSON
   eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
 
-  // Copy Static Files to /_Site
+    // Copy Static Files to /_Site
   eleventyConfig.addPassthroughCopy({
     "./src/admin/config.yml": "./admin/config.yml",
     "./node_modules/alpinejs/dist/cdn.min.js": "./static/js/alpine.js",
     "./node_modules/prismjs/themes/prism-tomorrow.css":
       "./static/css/prism-tomorrow.css",
+    "./src/static/css": "./static/css",
+    "./src/static/js": "./static/js",
+    "./src/static/img": "./static/img"
   });
 
   // Copy Image Folder to /_site
   eleventyConfig.addPassthroughCopy("./src/static/img");
+
+  // Copy favicon to route of /_site
+  eleventyConfig.addPassthroughCopy("./src/favicon.ico");
 
   // Copy favicon to route of /_site
   eleventyConfig.addPassthroughCopy("./src/favicon.ico");
