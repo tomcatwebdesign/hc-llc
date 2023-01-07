@@ -14,11 +14,11 @@
     
     <!--Favicons-->
     <!--Use https://realfavicongenerator.net/ to generate and download your favicons-->
-    <link rel="apple-touch-icon" sizes="144x144" href="/static/img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/static/img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/static/img/favicon-16x16.png">
-    <link rel="manifest" href="/static/img/site.webmanifest">
-    <link rel="mask-icon" href="/static/img/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="144x144" href="/static/img/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/img/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/img/icon/favicon-16x16.png">
+    <link rel="manifest" href="/static/img/icon/site.webmanifest">
+    <link rel="mask-icon" href="/static/img/icon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     
@@ -39,6 +39,31 @@
     {% if path == "home" %}
     <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
     {% endif %}
+
+    <!-- EmailJs -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init('RJGEF77EXlZh_tCp9');
+      })();
+    </script>
+    <script type="text/javascript">
+      window.onload = function () {
+        document.getElementById('estimate-form').addEventListener('submit', function (event) {
+          event.preventDefault();
+          // generate a five digit number for the contact_number variable
+          // this.contact_number.value = Math.random() * 100000 | 0;
+          // these IDs from the previous steps
+          emailjs.sendForm('tomcat_service', 'hc_llc_contact', this)
+            .then(function () {
+              console.log('SUCCESS!');
+            }, function (error) {
+              console.log('FAILED...', error);
+            });
+        });
+      }
+    </script>
   </head>
   <body>
     {% include "./partials/navbar.html" %}
