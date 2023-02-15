@@ -6,6 +6,11 @@ const main          = document.getElementById('main');
 const formBtn       = document.getElementById('form-submit');
 const form          = document.getElementById('estimate-form');
 const formContainer = document.getElementById('form-container');
+const yearDiv       = document.getElementById('year');
+const newYear = new Date().getFullYear().toString();
+
+// Update year to current year in copyright section of footer
+yearDiv.innerText = newYear;
 
 // // Open and close menu
 menuBtn.addEventListener('click', function () {
